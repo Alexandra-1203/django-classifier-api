@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',   # добавить
+    'rest_framework',  
     'api',
 ]
 
@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'GroceryShop',      # имя твоей БД
+        'NAME': 'GroceryShop',     
         'USER': 'postgres',
-        'PASSWORD': 'kolmar1203',   # твой пароль от PostgreSQL
-        'HOST':  'localhost',
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+        'HOST':  os.environ.get('POSTGRES_HOST', 'localhost'),
         'PORT': '5432',
     }
 }
