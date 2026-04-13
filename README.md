@@ -15,6 +15,7 @@ API будет доступно по адресу: http://localhost:8000/api/cat
 
 API Эндпоинты
 
+```markdown
 Категории
 GET /api/categories/ Список всех категорий (плоский)
 POST /api/categories/ Создать категорию
@@ -36,10 +37,13 @@ PUT /api/products/{id}/ Полное обновление продукта
 PATCH /api/products/{id}/ Частичное обновление продукта
 DELETE /api/products/{id}/ Удалить продукт
 GET /api/products/{id}/parents/ Получить всех предков продукта (категории)
+```
 
 Стек:
-Python 3.11
-Django 5
-Django REST Framework (DRF)
-PostgreSQL
-Docker / Docker Compose
+
+```markdown
+[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
+[![Django Version](https://img.shields.io/badge/django-5.0-green)](https://www.djangoproject.com/)
+[![DRF Version](https://img.shields.io/badge/DRF-3.15-red)](https://www.django-rest-framework.org/)
+[![Docker](https://img.shields.io/badge/docker-compose-blue)](https://www.docker.com/)
+```
