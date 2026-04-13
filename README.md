@@ -38,12 +38,3 @@ PATCH /api/products/{id}/ Частичное обновление продукт
 DELETE /api/products/{id}/ Удалить продукт
 GET /api/products/{id}/parents/ Получить всех предков продукта (категории)
 ```
-
-Стек:
-
-```markdown
-[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
-[![Django Version](https://img.shields.io/badge/django-5.0-green)](https://www.djangoproject.com/)
-[![DRF Version](https://img.shields.io/badge/DRF-3.15-red)](https://www.django-rest-framework.org/)
-[![Docker](https://img.shields.io/badge/docker-compose-blue)](https://www.docker.com/)
-```
